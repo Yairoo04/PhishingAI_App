@@ -1,0 +1,3470 @@
+﻿python : 2026-03-17 19:42:02.758387: I 
+tensorflow/core/util/port.cc:153] oneDNN custom 
+operations are on. You may see slightly different 
+numerical results due to floating-point round-off 
+errors from different computation orders. To turn 
+them off, set the environment variable 
+`TF_ENABLE_ONEDNN_OPTS=0`.
+At line:1 char:1
++ python benchmark_latency.py > 
+benchmark_output.txt 2>&1
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~
+    + CategoryInfo          : NotSpecified: 
+(2026-    03-17 19:4...ONEDNN_OPTS=0`.:String) 
+[], Remot    eException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+2026-03-17 19:42:04.026900: I 
+tensorflow/core/util/port.cc:153] oneDNN custom 
+operations are on. You may see slightly different 
+numerical results due to floating-point round-off 
+errors from different computation orders. To turn 
+them off, set the environment variable 
+`TF_ENABLE_ONEDNN_OPTS=0`.
+E:\1. App\4. Python\1. 
+python311\Lib\site-packages\sklearn\base.py:440: 
+InconsistentVersionWarning: Trying to unpickle 
+estimator DecisionTreeClassifier from version 
+1.7.2 when using version 1.7.0. This might lead 
+to breaking code or invalid results. Use at your 
+own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.
+html#security-maintainability-limitations
+  warnings.warn(
+E:\1. App\4. Python\1. 
+python311\Lib\site-packages\sklearn\base.py:440: 
+InconsistentVersionWarning: Trying to unpickle 
+estimator RandomForestClassifier from version 
+1.7.2 when using version 1.7.0. This might lead 
+to breaking code or invalid results. Use at your 
+own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.
+html#security-maintainability-limitations
+  warnings.warn(
+E:\1. App\4. Python\1. 
+python311\Lib\site-packages\sklearn\base.py:440: 
+InconsistentVersionWarning: Trying to unpickle 
+estimator LabelEncoder from version 1.7.2 when 
+using version 1.7.0. This might lead to breaking 
+code or invalid results. Use at your own risk. 
+For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.
+html#security-maintainability-limitations
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. 
+python311\Lib\site-packages\sklearn\base.py:440: 
+InconsistentVersionWarning: Trying to unpickle 
+estimator DecisionTreeClassifier from version 
+1.7.2 when using version 1.7.0. This might lead 
+to breaking code or invalid results. Use at your 
+own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.
+html#security-maintainability-limitations
+  warnings.warn(
+E:\1. App\4. Python\1. 
+python311\Lib\site-packages\sklearn\base.py:440: 
+InconsistentVersionWarning: Trying to unpickle 
+estimator RandomForestClassifier from version 
+1.7.2 when using version 1.7.0. This might lead 
+to breaking code or invalid results. Use at your 
+own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.
+html#security-maintainability-limitations
+  warnings.warn(
+E:\1. App\4. Python\1. 
+python311\Lib\site-packages\sklearn\base.py:440: 
+InconsistentVersionWarning: Trying to unpickle 
+estimator LabelEncoder from version 1.7.2 when 
+using version 1.7.0. This might lead to breaking 
+code or invalid results. Use at your own risk. 
+For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.
+html#security-maintainability-limitations
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. 
+python311\Lib\site-packages\sklearn\base.py:440: 
+InconsistentVersionWarning: Trying to unpickle 
+estimator DecisionTreeClassifier from version 
+1.7.2 when using version 1.7.0. This might lead 
+to breaking code or invalid results. Use at your 
+own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.
+html#security-maintainability-limitations
+  warnings.warn(
+E:\1. App\4. Python\1. 
+python311\Lib\site-packages\sklearn\base.py:440: 
+InconsistentVersionWarning: Trying to unpickle 
+estimator RandomForestClassifier from version 
+1.7.2 when using version 1.7.0. This might lead 
+to breaking code or invalid results. Use at your 
+own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.
+html#security-maintainability-limitations
+  warnings.warn(
+E:\1. App\4. Python\1. 
+python311\Lib\site-packages\sklearn\base.py:440: 
+InconsistentVersionWarning: Trying to unpickle 
+estimator LabelEncoder from version 1.7.2 when 
+using version 1.7.0. This might lead to breaking 
+code or invalid results. Use at your own risk. 
+For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.
+html#security-maintainability-limitations
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+RandomForestClassifier was fitted with feature 
+names
+  warnings.warn(
+E:\1. App\4. Python\1. python311\Lib\site-packages
+\sklearn\utils\validation.py:2749: UserWarning: X 
+does not have valid feature names, but 
+LGBMClassifier was fitted with feature names
+  warnings.warn(
+2026-03-17 19:42:25.984682: I tensorflow/core/plat
+form/cpu_feature_guard.cc:210] This TensorFlow 
+binary is optimized to use available CPU 
+instructions in performance-critical operations.
+To enable the following instructions: SSE3 SSE4.1 
+SSE4.2 AVX AVX2 AVX_VNNI FMA, in other 
+operations, rebuild TensorFlow with the 
+appropriate compiler flags.
+=== Multi-Modal Phishing Detection Benchmark ===
+
+[*] Benchmarking URL (Stacking) - 100 samples
+  Latency: 53.83 ms | Throughput: 18.58 s/s
+
+[*] Benchmarking Email (Stacking) - 100 samples
+  Latency: 53.21 ms | Throughput: 18.79 s/s
+
+[*] Benchmarking PDF (Stacking) - 100 samples
+  Latency: 50.98 ms | Throughput: 19.61 s/s
+
+[*] Benchmarking Image (EfficientNetV2M) - 100 samples
+  Latency: 415.51 ms | Throughput: 2.41 s/s
+
+[+] Multi-modal comparison chart saved as 'latency_comparison_full.png'

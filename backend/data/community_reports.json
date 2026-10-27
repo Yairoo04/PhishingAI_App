@@ -1,0 +1,14 @@
+[
+    {
+        "url": "https://www.youtube.com/",
+        "type": "Phishing Website",
+        "description": "URL này không phải phishing nha!",
+        "timestamp": "2026-03-17T15:37:28.636771"
+    },
+    {
+        "url": "http://kucoin.com",
+        "type": "Phishing Website",
+        "description": "Phishing URL",
+        "timestamp": "2026-03-17T14:09:59.108505"
+    }
+]

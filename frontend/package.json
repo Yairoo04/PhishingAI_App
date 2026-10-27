@@ -1,0 +1,36 @@
+{
+  "name": "phishing-detector-frontend",
+  "version": "1.0.0",
+  "dependencies": {
+    "boxicons": "^2.1.4",
+    "framer-motion": "^12.30.0",
+    "i18next": "^25.8.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-i18next": "^16.5.4",
+    "react-icons": "^5.5.0",
+    "react-router-dom": "^7.13.0",
+    "react-scripts": "^5.0.1"
+  },
+  "devDependencies": {
+    "tailwindcss": "^2.2.19"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "build:css": "tailwindcss build -i frontend/src/styles/tailwind.css -o frontend/public/tailwind.css"
+  },
+  "proxy": "http://localhost:5001",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
