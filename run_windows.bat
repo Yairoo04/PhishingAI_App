@@ -33,9 +33,11 @@ echo [BƯỚC 2/6] Tạo file cấu hình môi trường .env...
 echo # API Keys for PhishingAI Detection System
 echo VIRUSTOTAL_API_KEY=f760931f05bccd12a0072d9a6dfcdac95d0fc37547a72bbe72f88a5e1107197a
 echo GOOGLE_SAFE_BROWSING_API_KEY=AIzaSyA3r7GbF0swsjECuvQz5_1pwO0lNLp86t0
+echo URLSCAN_API_KEY=01a1cda3-16df-72eb-89fe-7a8617bc0053
+echo OTX_API_KEY=12223ed85c09f50e0ab29a7d0767570c9758839e6a1f4b150f119dfd6870f4d8
 echo APIVOID_API_KEY=8o2o1rgWocqCGPwr3fXEzioDGYJHR55C_N30uZ8
 echo UPLOAD_FOLDER=./Uploads
-echo FLASK_PORT=5000
+echo FLASK_PORT=5001
 echo FLASK_HOST=0.0.0.0
 ) > .env
 echo Đã tạo file .env thành công!

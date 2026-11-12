@@ -86,11 +86,16 @@ def extract_features(url: str) -> dict:
     """
     try:
         if not url.lower().startswith(('http://', 'https://')):
-            url = 'http://' + url
+            url = 'https://' + url
 
         parsed = urlparse(url)
         if not parsed.hostname:
             raise ValueError("Invalid URL - no hostname found")
+
+        # Standardize bare domain to have root path "/"
+        if not parsed.path:
+            url = url + "/"
+            parsed = urlparse(url)
 
         domain = parsed.hostname.lower()
         path = parsed.path or "/"
@@ -118,7 +123,7 @@ def extract_features(url: str) -> dict:
         is_impersonated, min_dist, matched_brand = detect_brand_impersonation(domain)
         if is_impersonated and matched_brand:
             brand_sim = max(0.0, 1.0 - (min_dist / max(len(matched_brand), 1)))
-        elif min_dist < 99 and matched_brand:
+        elif min_dist <= 2 and matched_brand:
             brand_sim = max(0.0, 1.0 - (min_dist / max(len(matched_brand), 1)))
         else:
             brand_sim = 0.0

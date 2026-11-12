@@ -6,7 +6,7 @@
  * and if the request fails (network error, timeout), it retries on the Fallback server.
  */
 
-const PRIMARY_SERVER = 'https://phd.infoseclab.id.vn';
+const PRIMARY_SERVER = typeof window !== 'undefined' && window.location.origin ? window.location.origin : 'https://phishingai.holegioi.app';
 const FALLBACK_SERVER = 'https://phishingai.holegioi.app';
 
 /**

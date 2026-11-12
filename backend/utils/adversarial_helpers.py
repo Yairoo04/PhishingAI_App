@@ -49,10 +49,54 @@ except ImportError:
 
 # Known multi-part TLD suffixes for accurate fallback
 COMMON_TWO_PART_TLDS = {
-    "com.vn", "edu.vn", "gov.vn", "net.vn", "org.vn", "co.uk", "org.uk",
-    "gov.uk", "ac.uk", "co.jp", "ne.jp", "com.au", "net.au", "com.br",
-    "co.in", "net.in", "gen.in", "co.nz", "com.sg", "com.tw", "com.hk"
+    "com.vn", "edu.vn", "gov.vn", "net.vn", "org.vn", "ac.vn", "pro.vn", "info.vn",
+    "co.uk", "org.uk", "gov.uk", "ac.uk", "co.jp", "ne.jp", "com.au", "net.au",
+    "com.br", "co.in", "net.in", "gen.in", "co.nz", "com.sg", "com.tw", "com.hk"
 }
+
+# --- Whitelist of Trusted High-Authority Vietnamese Registrable Domains ---
+VIETNAMESE_TRUSTED_REGISTRABLE_DOMAINS = {
+    # News & Media
+    "vnexpress.net", "tuoitre.vn", "thanhnien.vn", "dantri.com.vn", "vietnamnet.vn",
+    "znews.vn", "zingnews.vn", "zing.vn", "vtv.vn", "vov.vn", "nhandan.vn", "laodong.vn",
+    "tienphong.vn", "soha.vn", "kenh14.vn", "24h.com.vn", "cafef.vn", "cafebiz.vn",
+    "genk.vn", "vneconomy.vn", "plo.vn", "sggp.org.vn", "baomoi.com", "vtcnews.vn",
+    "tinhte.vn", "kienthuc.net.vn", "vietstock.vn", "vietnamplus.vn", "bnews.vn",
+    "hanoimoi.com.vn", "kinhtedothi.vn", "congan.com.vn", "cand.com.vn",
+    # Banks & Financial Services
+    "vietcombank.com.vn", "techcombank.com", "mbbank.com.vn", "bidv.com.vn",
+    "agribank.com.vn", "vietinbank.vn", "vpbank.com.vn", "acb.com.vn", "tpb.vn",
+    "tpbank.com.vn", "hdbank.com.vn", "sacombank.com.vn", "shb.com.vn", "vib.com.vn",
+    "ocb.com.vn", "msb.com.vn", "seabank.com.vn", "bvbank.net.vn", "lpbank.com.vn",
+    "bacabank.vn", "namabank.com.vn", "ncb-bank.vn", "saigonbank.com.vn", "vietbank.com.vn",
+    "baovietbank.vn", "abbank.vn", "kienlongbank.com", "pgbank.com.vn", "dongabank.com.vn",
+    "momo.vn", "zalopay.vn", "vnpay.vn", "viettelmoney.vn",
+    # E-commerce, Retail & Services
+    "shopee.vn", "lazada.vn", "tiki.vn", "sendo.vn", "chotot.com", "bachhoaxanh.com",
+    "dienmayxanh.com", "thegioididong.com", "fptshop.com.vn", "cellphones.com.vn",
+    "viettelstore.vn", "didongviet.vn", "hasaki.vn", "concung.com", "nhathuoclongchau.com.vn",
+    "pharmacity.vn", "mediamart.vn", "gearvn.com", "hoanghamobile.com", "phongvu.vn",
+    "thuvienphapluat.vn", "luatvietnam.vn", "topcv.vn", "vietnamworks.com", "batdongsan.com.vn",
+    "vietnamairlines.com", "vietjetair.com", "bambooairways.com", "dsvn.vn", "vexere.com",
+    # Tech, Telecom & Social
+    "zalo.me", "coccoc.com", "fpt.vn", "fptplay.vn", "vnpt.com.vn", "viettel.vn",
+    "mobifone.vn", "vinaphone.com.vn", "vietnamobile.com.vn", "vinamilk.com.vn",
+    "vingroup.net", "masan.com", "hoaphat.com.vn", "evn.com.vn", "petrolimex.com.vn",
+    "traveloka.com",
+    # Key Gov portals
+    "chinhphu.vn", "vneid.gov.vn", "dichvucong.gov.vn", "baohiemxahoi.gov.vn",
+    "bocongan.gov.vn", "moet.gov.vn", "moh.gov.vn", "mic.gov.vn", "gdt.gov.vn",
+    "customs.gov.vn", "toaan.gov.vn"
+}
+
+def is_trusted_domain(host: str, reg_domain: str = "") -> bool:
+    """Check if host is an official VN gov/edu or trusted entity."""
+    h = (host or "").lower().strip(".")
+    if h.endswith(".gov.vn") or h.endswith(".edu.vn"):
+        return True
+    if not reg_domain:
+        reg_domain, _, _ = extract_domain_parts(h)
+    return reg_domain in VIETNAMESE_TRUSTED_REGISTRABLE_DOMAINS
 
 
 # --- High-Value Brand Names and Official Domains ---
@@ -122,6 +166,32 @@ TOP_BRAND_MAP = {
     "steamcommunity": "steamcommunity.com",
     "roblox": "roblox.com",
     
+    # Vietnam News & Media
+    "vnexpress": "vnexpress.net",
+    "tuoitre": "tuoitre.vn",
+    "thanhnien": "thanhnien.vn",
+    "dantri": "dantri.com.vn",
+    "vietnamnet": "vietnamnet.vn",
+    "znews": "znews.vn",
+    "vtv": "vtv.vn",
+    "vov": "vov.vn",
+    "nhandan": "nhandan.vn",
+    "laodong": "laodong.vn",
+    "tienphong": "tienphong.vn",
+    "soha": "soha.vn",
+    "kenh14": "kenh14.vn",
+    "24h": "24h.com.vn",
+    "cafef": "cafef.vn",
+    "cafebiz": "cafebiz.vn",
+    "genk": "genk.vn",
+    "vneconomy": "vneconomy.vn",
+    "plo": "plo.vn",
+    "sggp": "sggp.org.vn",
+    "baomoi": "baomoi.com",
+    "vtcnews": "vtcnews.vn",
+    "tinhte": "tinhte.vn",
+    "kienthuc": "kienthuc.net.vn",
+
     # Vietnam Banks & Financial Services
     "vietcombank": "vietcombank.com.vn",
     "techcombank": "techcombank.com",
@@ -135,24 +205,50 @@ TOP_BRAND_MAP = {
     "agribank": "agribank.com.vn",
     "hdbank": "hdbank.com.vn",
     "shb": "shb.com.vn",
+    "vib": "vib.com.vn",
     "ocb": "ocb.com.vn",
+    "msb": "msb.com.vn",
+    "seabank": "seabank.com.vn",
+    "bvbank": "bvbank.net.vn",
+    "lpbank": "lpbank.com.vn",
+    "bacabank": "bacabank.vn",
+    "namabank": "namabank.com.vn",
+    "ncb": "ncb-bank.vn",
+    "saigonbank": "saigonbank.com.vn",
+    "vietbank": "vietbank.com.vn",
+    "baovietbank": "baovietbank.vn",
+    "abbank": "abbank.vn",
+    "kienlongbank": "kienlongbank.com",
+    "pgbank": "pgbank.com.vn",
+    "dongabank": "dongabank.com.vn",
     "momo": "momo.vn",
     "zalopay": "zalopay.vn",
     "viettelmoney": "viettelmoney.vn",
     "vnpay": "vnpay.vn",
     
-    # Vietnam E-Commerce & Gov Services
+    # Vietnam E-Commerce, Services & Gov
     "shopee": "shopee.vn",
     "lazada": "lazada.vn",
     "tiki": "tiki.vn",
     "sendo": "sendo.vn",
+    "chotot": "chotot.com",
+    "zalo": "zalo.me",
+    "coccoc": "coccoc.com",
     "vneid": "vneid.gov.vn",
     "dichvucong": "dichvucong.gov.vn",
     "baohiemxahoi": "baohiemxahoi.gov.vn",
+    "chinhphu": "chinhphu.vn",
     "fpt": "fpt.vn",
     "fptplay": "fptplay.vn",
     "vnpt": "vnpt.com.vn",
     "viettel": "viettel.vn",
+    "mobifone": "mobifone.vn",
+    "vinaphone": "vinaphone.com.vn",
+    "thegioididong": "thegioididong.com",
+    "dienmayxanh": "dienmayxanh.com",
+    "bachhoaxanh": "bachhoaxanh.com",
+    "fptshop": "fptshop.com.vn",
+    "cellphones": "cellphones.com.vn",
     "zing": "zing.vn",
 }
 
@@ -305,6 +401,10 @@ def detect_brand_impersonation(host: str) -> Tuple[bool, int, Optional[str]]:
     if not sld:
         return False, 99, None
 
+    # Step 0: Check against trusted Vietnamese & Gov/Edu domains
+    if is_trusted_domain(host, reg_domain):
+        return False, 99, None
+
     # Step 1: Normalize homoglyphs and leetspeak
     clean_host, _ = canonicalize_homoglyphs(host)
     _, clean_sld, clean_tokens = extract_domain_parts(clean_host)
@@ -320,7 +420,7 @@ def detect_brand_impersonation(host: str) -> Tuple[bool, int, Optional[str]]:
 
         brand_len = len(brand_key)
 
-        # Check A: Exact match via Leetspeak (e.g. y0utube -> youtube)
+        # Check A: Exact match via Leetspeak (e.g. y0utube -> youtube, vietc0mbank -> vietcombank)
         if leet_sld == brand_key:
             return True, 1, brand_key
 
@@ -346,13 +446,12 @@ def detect_brand_impersonation(host: str) -> Tuple[bool, int, Optional[str]]:
             best_distance = min_dist_brand
             detected_brand = brand_key
 
-        # Impersonation thresholds based on brand name length
-        if brand_len <= 4:
-            is_close = (min_dist_brand == 1)
-        elif brand_len <= 7:
-            is_close = (0 < min_dist_brand <= 2)
+        # Impersonation thresholds: tightened to avoid false positives on distinct words
+        rel_dist = min_dist_brand / max(brand_len, len(clean_sld))
+        if brand_len <= 5:
+            is_close = (min_dist_brand == 1 and rel_dist <= 0.25)
         else:
-            is_close = (0 < min_dist_brand <= 3)
+            is_close = (0 < min_dist_brand <= 2 and rel_dist <= 0.22)
 
         if is_close and reg_domain != official_domain:
             return True, min_dist_brand, brand_key

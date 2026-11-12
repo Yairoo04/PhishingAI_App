@@ -23,7 +23,8 @@ from utils.ensemble import fuse_multimodal_predictions
 from utils.url_third_party import (
     check_virustotal,
     check_google_safe_browsing,
-    check_urlvoid,
+    check_urlscan,
+    check_alienvault_otx,
 )
 from utils.adversarial_helpers import adversarial_url_flags
 
@@ -176,11 +177,16 @@ def predict_url_endpoint():
         else:
             full_url = input_normalized
 
+        # Standardize bare root domain (e.g. tuoitre.vn -> https://tuoitre.vn/)
+        parsed_url = urllib.parse.urlparse(full_url)
+        if not parsed_url.path:
+            full_url = full_url + "/"
+
         # ── 1. Adversarial URL analysis ─────────────────────────────────
-        adv_flags = adversarial_url_flags(input_normalized)
+        adv_flags = adversarial_url_flags(full_url)
 
         # ── 2. Modality 1: Lexical URL & Stacking ML Inference ─────────
-        features = extract_features(input_normalized)
+        features = extract_features(full_url)
         df       = pd.DataFrame([features], columns=URL_FEATURES)
         url_pred_class, url_proba = predict_stacking(df, adv_flags, "url")
         explanation = get_shap_explanation(df, adv_flags, "url")
@@ -218,7 +224,8 @@ def predict_url_endpoint():
         third_party = {
             "virusTotal":         check_virustotal(full_url),
             "googleSafeBrowsing": check_google_safe_browsing(full_url),
-            "urlVoid":            check_urlvoid(domain_name),
+            "urlScan":            check_urlscan(domain_name),
+            "alienVaultOTX":      check_alienvault_otx(domain_name),
         }
 
         logger.info(

@@ -4,9 +4,11 @@ import requests
 from requests.exceptions import RequestException, Timeout
 import logging
 from typing import Dict
+from pathlib import Path
 from dotenv import load_dotenv
 
-
+BASE_DIR = Path(__file__).resolve().parents[2]
+load_dotenv(BASE_DIR / ".env")
 load_dotenv()
 
 logger = logging.getLogger(__name__)
@@ -14,6 +16,8 @@ logger = logging.getLogger(__name__)
 
 VIRUSTOTAL_API_KEY = os.getenv("VIRUSTOTAL_API_KEY")
 GOOGLE_SAFE_BROWSING_API_KEY = os.getenv("GOOGLE_SAFE_BROWSING_API_KEY")
+URLSCAN_API_KEY = os.getenv("URLSCAN_API_KEY")
+OTX_API_KEY = os.getenv("OTX_API_KEY")
 APIVOID_API_KEY = os.getenv("APIVOID_API_KEY")
 
 
@@ -21,8 +25,10 @@ if not VIRUSTOTAL_API_KEY:
     logger.warning("VIRUSTOTAL_API_KEY is not set in environment variables!")
 if not GOOGLE_SAFE_BROWSING_API_KEY:
     logger.warning("GOOGLE_SAFE_BROWSING_API_KEY is not set in environment variables!")
-if not APIVOID_API_KEY:
-    logger.warning("APIVOID_API_KEY is not set in environment variables!")
+if not URLSCAN_API_KEY:
+    logger.warning("URLSCAN_API_KEY is not set in environment variables!")
+if not OTX_API_KEY:
+    logger.warning("OTX_API_KEY is not set in environment variables!")
 
 
 def check_virustotal(url: str) -> Dict[str, str]:
@@ -92,40 +98,159 @@ def check_virustotal(url: str) -> Dict[str, str]:
         return {"status": "Error", "details": "Unable to check VirusTotal.", "color": "gray"}
 
 
-def check_urlvoid(domain: str) -> Dict[str, str]:
-    
-    if not APIVOID_API_KEY:
-        logger.error("Missing APIVoid API key → cannot check domain")
-        return {"status": "Error", "details": "APIVoid API key not configured.", "color": "gray"}
+def check_urlscan(domain: str) -> Dict[str, str]:
+    """
+    Check domain or URL reputation using urlscan.io Community API.
+    Returns: {"status": "Safe" | "Dangerous" | "Error", "details": str, "color": str}
+    """
+    if not URLSCAN_API_KEY:
+        logger.error("Missing urlscan.io API key → cannot check domain")
+        return {"status": "Error", "details": "urlscan.io API key not configured.", "color": "gray"}
+
+    clean_domain = domain.split(":")[0].strip().lower()
+    try:
+        clean_domain = clean_domain.encode("idna").decode("ascii")
+    except Exception:
+        pass
 
     try:
-        endpoint = f"https://endpoint.apivoid.com/urlrep/v1/pay-as-you-go/?key={APIVOID_API_KEY}&host={domain}"
-        response = requests.get(endpoint, timeout=15)
+        endpoint = f'https://urlscan.io/api/v1/search/?q=page.domain:"{clean_domain}"&size=1'
+        headers = {
+            "API-Key": URLSCAN_API_KEY,
+            "Content-Type": "application/json"
+        }
+
+        response = requests.get(endpoint, headers=headers, timeout=8)
+
+        if response.status_code in (401, 403):
+            logger.warning(f"urlscan.io authorization error ({response.status_code}): {response.text}")
+            return {"status": "Error", "details": "urlscan.io API key invalid or expired.", "color": "gray"}
+
         response.raise_for_status()
-
         data = response.json()
-        detections = data.get("data", {}).get("report", {}).get("blacklists", {}).get("detections", 0)
+        results = data.get("results", [])
 
-        if detections > 0:
+        if results:
+            result_api = results[0].get("result")
+            if result_api:
+                # Fetch detailed verdict for this domain scan
+                r_detail = requests.get(result_api, headers=headers, timeout=8)
+                if r_detail.status_code == 200:
+                    verdicts = r_detail.json().get("verdicts", {}).get("overall", {})
+                    is_malicious = verdicts.get("malicious", False)
+                    score = verdicts.get("score", 0)
+                    categories = verdicts.get("categories", [])
+
+                    if is_malicious or score > 50:
+                        return {
+                            "status": "Dangerous",
+                            "details": f"Flagged on urlscan.io (Score: {score}, Categories: {categories}).",
+                            "color": "red"
+                        }
+                    else:
+                        return {
+                            "status": "Safe",
+                            "details": f"Clean reputation on urlscan.io (Score: {score}).",
+                            "color": "green"
+                        }
+
+        # No negative history found in urlscan.io
+        return {
+            "status": "Safe",
+            "details": "No threats reported on urlscan.io.",
+            "color": "green"
+        }
+
+    except Timeout:
+        logger.warning(f"Timeout checking urlscan.io for domain '{domain}'")
+        return {"status": "Error", "details": "Timeout connecting to urlscan.io.", "color": "orange"}
+
+    except Exception as e:
+        logger.warning(f"Error checking urlscan.io for domain '{domain}': {e}")
+        return {"status": "Error", "details": "Unable to check urlscan.io.", "color": "gray"}
+
+
+def check_alienvault_otx(domain: str) -> Dict[str, str]:
+    """
+    Check domain threat intelligence using AlienVault OTX (Open Threat Exchange).
+    Returns: {"status": "Safe" | "Dangerous" | "Error", "details": str, "color": str}
+    """
+    if not OTX_API_KEY:
+        logger.error("Missing AlienVault OTX API key → cannot check domain")
+        return {"status": "Error", "details": "AlienVault OTX API key not configured.", "color": "gray"}
+
+    clean_domain = domain.split(":")[0].strip().lower()
+    try:
+        clean_domain = clean_domain.encode("idna").decode("ascii")
+    except Exception:
+        pass
+
+    try:
+        endpoint = f"https://otx.alienvault.com/api/v1/indicators/domain/{clean_domain}/general"
+        headers = {"X-OTX-API-KEY": OTX_API_KEY}
+
+        response = requests.get(endpoint, headers=headers, timeout=8)
+
+        if response.status_code in (401, 403):
+            logger.warning(f"AlienVault OTX auth error ({response.status_code}): {response.text}")
+            return {"status": "Error", "details": "AlienVault OTX API key invalid or expired.", "color": "gray"}
+
+        if response.status_code == 404:
+            return {
+                "status": "Safe",
+                "details": "Clean reputation on AlienVault OTX (No threat record).",
+                "color": "green"
+            }
+
+        response.raise_for_status()
+        data = response.json()
+
+        # Check Whitelist in Validation
+        validation = data.get("validation", [])
+        is_whitelisted = any("whitelist" in str(v).lower() or "alexa" in str(v).lower() for v in validation)
+
+        pulse_info = data.get("pulse_info", {})
+        count = pulse_info.get("count", 0)
+
+        # Check for specific malicious pulses (phishing, malware, etc.)
+        malicious_pulses = []
+        threat_tags = {"phishing", "malware", "ransomware", "c2", "trojan", "exploit", "credential"}
+        for p in pulse_info.get("pulses", []):
+            tags = {t.lower() for t in p.get("tags", [])}
+            name = p.get("name", "").lower()
+            if tags.intersection(threat_tags) or any(t in name for t in threat_tags):
+                malicious_pulses.append(p.get("name"))
+
+        if malicious_pulses and not is_whitelisted:
             return {
                 "status": "Dangerous",
-                "details": f"Detected on {detections} blacklists.",
+                "details": f"Flagged in {len(malicious_pulses)} threat pulse(s) on AlienVault OTX.",
+                "color": "red"
+            }
+        elif count > 3 and not is_whitelisted:
+            return {
+                "status": "Dangerous",
+                "details": f"Reported in {count} threat pulse(s) on AlienVault OTX.",
                 "color": "red"
             }
         else:
             return {
                 "status": "Safe",
-                "details": "No blacklists found.",
+                "details": "Clean reputation on AlienVault OTX (No threat pulses).",
                 "color": "green"
             }
 
     except Timeout:
-        logger.error(f"Timeout checking URLVoid for domain '{domain}'")
-        return {"status": "Error", "details": "Timeout connecting to URLVoid.", "color": "orange"}
+        logger.warning(f"Timeout checking AlienVault OTX for domain '{domain}'")
+        return {"status": "Error", "details": "Timeout connecting to AlienVault OTX.", "color": "orange"}
 
     except Exception as e:
-        logger.exception(f"Error checking URLVoid for domain '{domain}': {e}")
-        return {"status": "Error", "details": "Unable to check URLVoid.", "color": "gray"}
+        logger.warning(f"Error checking AlienVault OTX for domain '{domain}': {e}")
+        return {"status": "Error", "details": "Unable to check AlienVault OTX.", "color": "gray"}
+
+
+# Alias for backward compatibility
+check_urlvoid = check_urlscan
 
 
 def check_google_safe_browsing(url: str) -> Dict[str, str]:

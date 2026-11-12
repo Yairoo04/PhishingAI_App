@@ -102,7 +102,7 @@ const ExtensionDownload = () => {
                     </div>
                     <div style={{ textAlign: 'left' }}>
                         <h4 style={{ color: theme.text, fontSize: '14px', fontWeight: 700, marginBottom: '8px' }}>Support</h4>
-                        <a href="https://phd.infoseclab.id.vn/" target="_blank" rel="noopener noreferrer" style={{ color: '#10b981', fontSize: '13px', fontWeight: 600, textDecoration: 'none' }} className="hover:underline">
+                        <a href="https://phishingai.holegioi.app/" target="_blank" rel="noopener noreferrer" style={{ color: '#10b981', fontSize: '13px', fontWeight: 600, textDecoration: 'none' }} className="hover:underline">
                             Visit Support Center
                         </a>
                     </div>

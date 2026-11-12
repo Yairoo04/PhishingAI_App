@@ -193,3 +193,99 @@ def api_scan():
     except Exception as e:
         logger.exception("API scan failed")
         return jsonify({"error": str(e)}), 500
+
+
+@bp.route("/scan/url", methods=["POST"])
+def api_scan_url():
+    """Alias for /scan - keeps existing /scan URL untouched."""
+    return api_scan()
+
+
+@bp.route("/scan/domain", methods=["POST"])
+def api_scan_domain():
+    """Proxy domain WHOIS & DNS lookup with API key rate limiting."""
+    try:
+        keys = load_keys()
+        key, key_info, err = require_api_key(keys)
+        if err:
+            return err
+
+        used = used_today(key_info)
+        if used >= DAILY_LIMIT:
+            return jsonify({
+                "error": f"Daily limit of {DAILY_LIMIT} scans reached. Quota resets at midnight.",
+                "used_today": used,
+                "daily_limit": DAILY_LIMIT,
+            }), 429
+
+        data = request.get_json(silent=True)
+        if not data or "domain" not in data:
+            return jsonify({"error": "Missing 'domain' in request body"}), 400
+
+        from routes.domain import lookup_domain
+        count = increment_usage(key, keys)
+        res = lookup_domain()
+        if isinstance(res, tuple):
+            resp, status = res
+        else:
+            resp, status = res, 200
+
+        try:
+            payload = json.loads(resp.get_data(as_text=True))
+        except Exception:
+            payload = {}
+
+        payload["rate_limit"] = {
+            "daily_limit": DAILY_LIMIT,
+            "used_today": count,
+            "remaining_today": max(0, DAILY_LIMIT - count),
+        }
+        return jsonify(payload), status
+    except Exception as e:
+        logger.exception("API domain scan failed")
+        return jsonify({"error": str(e)}), 500
+
+
+@bp.route("/scan/darkweb", methods=["POST"])
+def api_scan_darkweb():
+    """Proxy darkweb email breach check with API key rate limiting."""
+    try:
+        keys = load_keys()
+        key, key_info, err = require_api_key(keys)
+        if err:
+            return err
+
+        used = used_today(key_info)
+        if used >= DAILY_LIMIT:
+            return jsonify({
+                "error": f"Daily limit of {DAILY_LIMIT} scans reached. Quota resets at midnight.",
+                "used_today": used,
+                "daily_limit": DAILY_LIMIT,
+            }), 429
+
+        data = request.get_json(silent=True)
+        if not data or "email" not in data:
+            return jsonify({"error": "Missing 'email' in request body"}), 400
+
+        from routes.darkweb import check_email
+        count = increment_usage(key, keys)
+        res = check_email()
+        if isinstance(res, tuple):
+            resp, status = res
+        else:
+            resp, status = res, 200
+
+        try:
+            payload = json.loads(resp.get_data(as_text=True))
+        except Exception:
+            payload = {}
+
+        payload["rate_limit"] = {
+            "daily_limit": DAILY_LIMIT,
+            "used_today": count,
+            "remaining_today": max(0, DAILY_LIMIT - count),
+        }
+        return jsonify(payload), status
+    except Exception as e:
+        logger.exception("API darkweb scan failed")
+        return jsonify({"error": str(e)}), 500

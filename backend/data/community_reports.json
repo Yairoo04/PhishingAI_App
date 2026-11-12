@@ -1,5 +1,35 @@
 [
     {
+        "url": "https://www.you​tube.com/",
+        "type": "Trang web Phishing",
+        "description": "URL này bị Zero width",
+        "timestamp": "2026-11-08T11:20:03.348968"
+    },
+    {
+        "url": "https://www.yоutube.com/",
+        "type": "Trang web Phishing",
+        "description": "URL này là Homoglyph",
+        "timestamp": "2026-11-08T11:19:21.067694"
+    },
+    {
+        "url": "https://reddit-autopilot.pages.dev/",
+        "type": "Trang web Phishing",
+        "description": "Đây là trang web malware",
+        "timestamp": "2026-11-07T19:37:54.491358"
+    },
+    {
+        "url": "https://www.y0utube.com/",
+        "type": "Kỹ thuật xã hội",
+        "description": "Cẩn thận với trang web này",
+        "timestamp": "2026-11-07T19:21:03.645940"
+    },
+    {
+        "url": "https://phishing-test-site.xyz",
+        "type": "Phishing Website",
+        "description": "Trang web gia mao ngan hang",
+        "timestamp": "2026-11-07T19:19:47.527079"
+    },
+    {
         "url": "https://www.youtube.com/",
         "type": "Phishing Website",
         "description": "URL này không phải phishing nha!",

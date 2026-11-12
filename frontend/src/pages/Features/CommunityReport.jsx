@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useTheme } from '../../context/ThemeContext';
 
-// Use relative path or dynamically resolve port
-const API_BASE = 'https://phd.infoseclab.id.vn';
+// Use relative path for API calls
+const API_BASE = '';
 
 const CommunityReport = () => {
     const { t } = useTranslation();

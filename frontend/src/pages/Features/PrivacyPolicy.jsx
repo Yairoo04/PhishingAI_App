@@ -34,12 +34,12 @@ const PrivacyPolicy = () => {
                 <span>
                     For support or questions, please contact:{' '}
                     <a
-                        href="https://phd.infoseclab.id.vn/"
+                        href="https://phishingai.holegioi.app/"
                         className="text-green-500 hover:underline transition-all"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        https://phd.infoseclab.id.vn/
+                        https://phishingai.holegioi.app/
                     </a>
                 </span>
             )
