@@ -72,7 +72,7 @@ OTX_API_KEY=12223ed85c09f50e0ab29a7d0767570c9758839e6a1f4b150f119dfd6870f4d8
 
 # Other Configurations
 UPLOAD_FOLDER=./Uploads
-FLASK_PORT=5001
+FLASK_PORT=5000
 FLASK_HOST=0.0.0.0
 EOF
     echo -e "${GREEN}✔ Đã tạo file .env mới thành công!${NC}"
