@@ -21,10 +21,15 @@ def fuse_multimodal_predictions(
     url_proba: float,
     visual_result: Dict[str, Any],
     content_result: Dict[str, Any],
-    adv_flags: Dict[str, Any]
+    adv_flags: Dict[str, Any],
+    third_party_eval: Dict[str, Any] = None
 ) -> Tuple[str, float, Dict[str, Any]]:
     """
-    Fuses predictions across all 3 available modalities.
+    Fuses predictions across all available modalities:
+      1. Static URL Stacking ML Model
+      2. Visual EfficientNetV2-M Screenshot Model
+      3. Web HTML & DOM Content Model
+      4. Live Cyber Threat Intelligence (VirusTotal, urlscan.io, PhishTank, AlienVault OTX, Google Safe Browsing)
     Returns:
       (prediction_label: str ("phishing"/"legitimate"),
        final_ensemble_proba: float (0.0 to 1.0),
@@ -53,10 +58,24 @@ def fuse_multimodal_predictions(
     # Weighted Ensemble Fusion Score
     raw_ensemble_proba = (w_url_norm * p_url) + (w_vis_norm * p_visual) + (w_cnt_norm * p_content)
 
-    # Adversarial & High-Risk Hard Overrides
+    # Preserve strong visual signal when visual CNN detects phishing
     final_proba = raw_ensemble_proba
+    if p_visual >= 0.60:
+        final_proba = max(final_proba, p_visual)
+
     override_reason = None
 
+    # Check Web Content Security Gateway Interception
+    cnt_features = content_result.get("features", {})
+    if cnt_features.get("security_gateway_blocked"):
+        final_proba = max(final_proba, 0.98)
+        override_reason = "Security Gateway Block Intercepted (Phishing Interstitial Page)"
+    elif cnt_features.get("title_brand_mismatch"):
+        final_proba = max(final_proba, 0.88)
+        brand = cnt_features.get("detected_brand", "known brand")
+        override_reason = f"Title-Domain Mismatch (Spoofing {brand.capitalize()})"
+
+    # Check Adversarial Flags
     if adv_flags.get("unicode_spoofing"):
         final_proba = max(final_proba, 0.98)
         override_reason = "Adversarial Homoglyph / Unicode Spoofing Detected"
@@ -67,12 +86,34 @@ def fuse_multimodal_predictions(
             override_reason = f"Adversarial Brand Impersonation Flagged (Targeting {matched_brand.capitalize()})"
         else:
             override_reason = "Adversarial Brand Impersonation Flagged"
-    
-    cnt_features = content_result.get("features", {})
-    if cnt_features.get("title_brand_mismatch"):
-        final_proba = max(final_proba, 0.88)
-        brand = cnt_features.get("detected_brand", "known brand")
-        override_reason = f"Title-Domain Mismatch (Spoofing {brand.capitalize()})"
+
+    # Live Cyber Threat Intelligence Overrides (PhishTank, urlscan, VirusTotal, AlienVault, SafeBrowsing)
+    if third_party_eval:
+        threat_sources = []
+        vt = third_party_eval.get("virusTotal", {})
+        us = third_party_eval.get("urlScan", {})
+        pt = third_party_eval.get("phishTank", {})
+        otx = third_party_eval.get("alienVaultOTX", {})
+        gs = third_party_eval.get("googleSafeBrowsing", {})
+
+        if vt.get("status") == "Dangerous":
+            threat_sources.append(f"VirusTotal ({vt.get('details', '')})")
+        if us.get("status") == "Dangerous":
+            threat_sources.append(f"urlscan.io ({us.get('details', '')})")
+        if pt.get("status") == "Dangerous":
+            threat_sources.append(f"PhishTank ({pt.get('details', '')})")
+        if otx.get("status") == "Dangerous":
+            threat_sources.append(f"AlienVault OTX ({otx.get('details', '')})")
+        if gs.get("status") == "Dangerous":
+            threat_sources.append(f"Google Safe Browsing ({gs.get('details', '')})")
+
+        if threat_sources:
+            final_proba = max(final_proba, 0.98)
+            override_reason = f"Live Threat Intelligence Confirmed: {'; '.join(threat_sources)}"
+        elif pt.get("status") == "Suspicious":
+            final_proba = max(final_proba, 0.75)
+            if not override_reason:
+                override_reason = "Reported Suspicious on PhishTank Feed"
 
     final_proba = round(min(max(final_proba, 0.0), 1.0), 4)
     prediction = "phishing" if final_proba >= 0.50 else "legitimate"

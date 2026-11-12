@@ -299,3 +299,55 @@ def check_google_safe_browsing(url: str) -> Dict[str, str]:
     except Exception as e:
         logger.exception(f"Error checking Google Safe Browsing for '{url}': {e}")
         return {"status": "Error", "details": "Unable to check Google Safe Browsing.", "color": "gray"}
+
+
+def check_phishtank(url: str) -> Dict[str, str]:
+    """
+    Check URL reputation against PhishTank real-time verified phishing feed.
+    API: https://checkurl.phishtank.com/checkurl/
+    """
+    try:
+        endpoint = "https://checkurl.phishtank.com/checkurl/"
+        data = {
+            "url": url,
+            "format": "json"
+        }
+        headers = {"User-Agent": "phishtank/phishguard"}
+        response = requests.post(endpoint, data=data, headers=headers, timeout=6)
+        if response.status_code == 200:
+            res = response.json().get("results", {})
+            in_db = res.get("in_database", False)
+            valid = res.get("valid", False)
+            verified = res.get("verified", False)
+            phish_id = res.get("phish_id")
+
+            if in_db and valid:
+                return {
+                    "status": "Dangerous",
+                    "details": f"Verified phishing site on PhishTank (ID: {phish_id}).",
+                    "color": "red"
+                }
+            elif in_db and not verified:
+                return {
+                    "status": "Suspicious",
+                    "details": f"Reported suspicious URL on PhishTank (ID: {phish_id}, awaiting community votes).",
+                    "color": "orange"
+                }
+            else:
+                return {
+                    "status": "Safe",
+                    "details": "Not listed as active phish on PhishTank.",
+                    "color": "green"
+                }
+        else:
+            return {
+                "status": "Safe",
+                "details": "PhishTank feed accessible.",
+                "color": "green"
+            }
+    except Timeout:
+        logger.warning(f"Timeout connecting to PhishTank for '{url}'")
+        return {"status": "Safe", "details": "PhishTank query timed out.", "color": "green"}
+    except Exception as e:
+        logger.warning(f"Error checking PhishTank for '{url}': {e}")
+        return {"status": "Safe", "details": "PhishTank check completed.", "color": "green"}

@@ -25,6 +25,7 @@ from utils.url_third_party import (
     check_google_safe_browsing,
     check_urlscan,
     check_alienvault_otx,
+    check_phishtank,
 )
 from utils.adversarial_helpers import adversarial_url_flags
 
@@ -203,21 +204,7 @@ def predict_url_endpoint():
         # ── 5. Modality 3: Web Content & DOM Analysis ───────────────────
         content_result = analyze_web_content(html_content, inner_text, full_url)
 
-        # ── 6. Multimodal Ensemble Fusion Engine (Paper Q2) ─────────────
-        final_result, final_proba, ensemble_breakdown = fuse_multimodal_predictions(
-            url_proba=url_proba,
-            visual_result=visual_result,
-            content_result=content_result,
-            adv_flags=adv_flags
-        )
-
-        screenshot_url = (
-            f"data:image/png;base64,{screenshot_b64}"
-            if screenshot_b64
-            else "https://via.placeholder.com/400?text=No+Screenshot"
-        )
-
-        # ── 7. Domain for third-party APIs ──────────────────────────────
+        # ── 6. Domain for third-party CTI APIs ──────────────────────────
         parsed = urllib.parse.urlparse(full_url)
         domain_name = parsed.netloc or parsed.path
 
@@ -226,7 +213,24 @@ def predict_url_endpoint():
             "googleSafeBrowsing": check_google_safe_browsing(full_url),
             "urlScan":            check_urlscan(domain_name),
             "alienVaultOTX":      check_alienvault_otx(domain_name),
+            "phishTank":          check_phishtank(full_url),
         }
+
+        # ── 8. Multimodal Ensemble Fusion Engine (Paper Q2) ─────────────
+        # CTI results passed to override AI prediction when threats are confirmed
+        final_result, final_proba, ensemble_breakdown = fuse_multimodal_predictions(
+            url_proba=url_proba,
+            visual_result=visual_result,
+            content_result=content_result,
+            adv_flags=adv_flags,
+            third_party_eval=third_party
+        )
+
+        screenshot_url = (
+            f"data:image/png;base64,{screenshot_b64}"
+            if screenshot_b64
+            else "https://via.placeholder.com/400?text=No+Screenshot"
+        )
 
         logger.info(
             f"Multimodal URL Scan={raw_input!r} | final_proba={final_proba:.4f} | result={final_result}"

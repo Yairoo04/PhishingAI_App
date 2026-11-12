@@ -128,8 +128,27 @@ def analyze_web_content(html_content: str, inner_text: str, url: str) -> Dict[st
 
     keyword_count = len(matched_keywords)
 
+    # 5. Security Gateway / Phishing Interstitial Interception Detection
+    security_gateway_blocked = False
+    block_patterns = [
+        r"suspected\s+phishing",
+        r"deceptive\s+site\s+ahead",
+        r"phishing\s+site\s+blocked",
+        r"phishing\s+warning",
+        r"malicious\s+website\s+blocked",
+        r"flagged\s+as\s+phishing",
+        r"cloudflare.*suspected\s+phishing"
+    ]
+    for bp in block_patterns:
+        if re.search(bp, title_text.lower()) or re.search(bp, text_lower):
+            security_gateway_blocked = True
+            break
+
     # ── Calculate Content Phishing Risk Score ────────────────────────────────
     risk_score = 0.0
+
+    if security_gateway_blocked:
+        risk_score = 0.98
 
     # Risk factor: Form containing password input on unverified page
     if password_fields > 0:
@@ -173,6 +192,7 @@ def analyze_web_content(html_content: str, inner_text: str, url: str) -> Dict[st
         "title_brand_mismatch": title_brand_mismatch,
         "detected_brand": detected_brand,
         "phishing_keyword_matches": keyword_count,
+        "security_gateway_blocked": security_gateway_blocked,
     }
 
     logger.info(f"Web Content Analysis for {url}: prob={content_prob:.4f}, brand_mismatch={title_brand_mismatch}, ext_form={external_form_action}")
