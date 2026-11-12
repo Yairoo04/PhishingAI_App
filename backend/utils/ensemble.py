@@ -29,7 +29,7 @@ def fuse_multimodal_predictions(
       1. Static URL Stacking ML Model
       2. Visual EfficientNetV2-M Screenshot Model
       3. Web HTML & DOM Content Model
-      4. Live Cyber Threat Intelligence (VirusTotal, urlscan.io, PhishTank, AlienVault OTX, Google Safe Browsing)
+      4. Live Cyber Threat Intelligence (VirusTotal, urlscan.io, AlienVault OTX, Google Safe Browsing)
     Returns:
       (prediction_label: str ("phishing"/"legitimate"),
        final_ensemble_proba: float (0.0 to 1.0),
@@ -87,12 +87,11 @@ def fuse_multimodal_predictions(
         else:
             override_reason = "Adversarial Brand Impersonation Flagged"
 
-    # Live Cyber Threat Intelligence Overrides (PhishTank, urlscan, VirusTotal, AlienVault, SafeBrowsing)
+    # Live Cyber Threat Intelligence Overrides (urlscan, VirusTotal, AlienVault, SafeBrowsing)
     if third_party_eval:
         threat_sources = []
         vt  = third_party_eval.get("virusTotal", {})
         us  = third_party_eval.get("urlScan", {})
-        pt  = third_party_eval.get("phishTank", {})
         otx = third_party_eval.get("alienVaultOTX", {})
         gs  = third_party_eval.get("googleSafeBrowsing", {})
 
@@ -100,8 +99,6 @@ def fuse_multimodal_predictions(
             threat_sources.append(f"VirusTotal ({vt.get('details', '')})")
         if us.get("status") == "Dangerous":
             threat_sources.append(f"urlscan.io ({us.get('details', '')})")
-        if pt.get("status") == "Dangerous":
-            threat_sources.append(f"PhishTank ({pt.get('details', '')})")
         if otx.get("status") == "Dangerous":
             threat_sources.append(f"AlienVault OTX ({otx.get('details', '')})")
         if gs.get("status") == "Dangerous":
@@ -110,25 +107,6 @@ def fuse_multimodal_predictions(
         if threat_sources:
             final_proba = max(final_proba, 0.98)
             override_reason = f"Live Threat Intelligence Confirmed: {'; '.join(threat_sources)}"
-        elif pt.get("status") == "Suspicious":
-            # PhishTank Suspicious = "in database, unverified by community votes".
-            # Only amplify risk when at least one other CTI source corroborates the threat.
-            # If all other sources are Safe/Unverified, PhishTank alone is not authoritative
-            # enough to override a low ML score (avoids false positives on well-known domains
-            # that appear in PhishTank's unverified pending queue, e.g. youtube.com).
-            other_dangerous = any(
-                src.get("status") in ("Dangerous", "Suspicious")
-                for src in [vt, us, otx, gs]
-            )
-            if other_dangerous:
-                final_proba = max(final_proba, 0.75)
-                if not override_reason:
-                    override_reason = "Reported Suspicious on PhishTank Feed (corroborated by other CTI sources)"
-            else:
-                # Mild bump only — not enough to cross the 0.5 phishing threshold alone
-                final_proba = max(final_proba, min(final_proba + 0.10, 0.45))
-                if not override_reason:
-                    override_reason = "Reported Suspicious on PhishTank Feed (unverified, no corroboration)"
 
     final_proba = round(min(max(final_proba, 0.0), 1.0), 4)
     prediction = "phishing" if final_proba >= 0.50 else "legitimate"

@@ -25,7 +25,6 @@ from utils.url_third_party import (
     check_google_safe_browsing,
     check_urlscan,
     check_alienvault_otx,
-    check_phishtank,
 )
 from utils.adversarial_helpers import adversarial_url_flags
 
@@ -213,7 +212,6 @@ def predict_url_endpoint():
             "googleSafeBrowsing": check_google_safe_browsing(full_url),
             "urlScan":            check_urlscan(domain_name),
             "alienVaultOTX":      check_alienvault_otx(domain_name),
-            "phishTank":          check_phishtank(full_url),
         }
 
         # ── 8. Multimodal Ensemble Fusion Engine (Paper Q2) ─────────────

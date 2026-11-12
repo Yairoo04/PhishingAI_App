@@ -124,7 +124,7 @@ const URLChecker = ({ setLoading, loading, onResult, urlToCheck, triggerCheck })
             </form>
 
             <div className="mt-12 flex flex-wrap justify-center gap-6 opacity-40">
-                {['Real-time DNS check', 'Static URL analysis', 'Domain Reputation', 'PhishTank Feed'].map((f, i) => (
+                {['Real-time DNS check', 'Static URL analysis', 'Domain Reputation', 'Threat Intelligence'].map((f, i) => (
                     <div key={i} className="flex items-center gap-2">
                         <i className="bx bx-check-shield text-green-500" />
                         <span className="text-[10px] font-black uppercase tracking-[0.15em]" style={{ color: theme.text }}>{f}</span>
