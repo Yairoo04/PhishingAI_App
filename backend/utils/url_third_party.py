@@ -65,26 +65,75 @@ def check_virustotal(url: str) -> Dict[str, str]:
 
     except requests.exceptions.HTTPError as http_err:
         if response.status_code == 404:
-            
+            # URL not indexed — submit for scan then poll until completed
             logger.info(f"URL '{url}' not found in VirusTotal → submitting for scan")
             try:
-                submit_endpoint = "https://www.virustotal.com/api/v3/urls"
-                submit_data = {"url": url}
+                import time as _time
                 submit_response = requests.post(
-                    submit_endpoint,
+                    "https://www.virustotal.com/api/v3/urls",
                     headers=headers,
-                    data=submit_data,
+                    data={"url": url},
                     timeout=15
                 )
                 submit_response.raise_for_status()
+                analysis_id = submit_response.json().get("data", {}).get("id", "")
+
+                if analysis_id:
+                    analysis_endpoint = f"https://www.virustotal.com/api/v3/analyses/{analysis_id}"
+                    # Poll up to 8 × 5s = 40s, waiting for "completed"
+                    for attempt in range(8):
+                        _time.sleep(5)
+                        poll = requests.get(analysis_endpoint, headers=headers, timeout=12)
+                        if poll.status_code != 200:
+                            continue
+                        attrs   = poll.json().get("data", {}).get("attributes", {})
+                        status  = attrs.get("status", "queued")
+                        stats   = attrs.get("stats", {})
+                        malicious   = stats.get("malicious", 0)
+                        suspicious  = stats.get("suspicious", 0)
+
+                        logger.info(
+                            f"VirusTotal poll [{attempt+1}/8]: status={status}, "
+                            f"malicious={malicious}, suspicious={suspicious}"
+                        )
+
+                        if status == "completed":
+                            if malicious > 0:
+                                return {
+                                    "status": "Dangerous",
+                                    "details": f"{malicious} engines flagged this URL as malicious.",
+                                    "color": "red"
+                                }
+                            elif suspicious > 0:
+                                return {
+                                    "status": "Suspicious",
+                                    "details": f"{suspicious} engines marked this URL as suspicious.",
+                                    "color": "orange"
+                                }
+                            else:
+                                return {
+                                    "status": "Safe",
+                                    "details": "No malicious detections on VirusTotal.",
+                                    "color": "green"
+                                }
+                        # still in-progress — check partial malicious hits
+                        if malicious > 0:
+                            return {
+                                "status": "Dangerous",
+                                "details": f"{malicious} engines flagged this URL as malicious (scan in-progress).",
+                                "color": "red"
+                            }
+
+                # Timed out waiting — treat as Unverified (no confirmed threat)
+                logger.warning(f"VirusTotal scan timed out for '{url}' after 40s")
                 return {
-                    "status": "Processing",
-                    "details": "URL submitted for analysis. Results may take a few minutes.",
-                    "color": "yellow"
+                    "status": "Unverified",
+                    "details": "New URL submitted to VirusTotal — scan timed out (no threats detected so far).",
+                    "color": "blue"
                 }
             except Exception as submit_err:
                 logger.error(f"Failed to submit URL '{url}' to VirusTotal: {submit_err}")
-                return {"status": "Error", "details": "Unable to submit URL for scanning.", "color": "gray"}
+                return {"status": "Unverified", "details": "New URL — not yet indexed by VirusTotal.", "color": "blue"}
         else:
             logger.error(f"HTTP error checking VirusTotal for '{url}': {http_err} (code: {response.status_code})")
             return {"status": "Error", "details": f"VirusTotal error: {response.status_code}", "color": "gray"}

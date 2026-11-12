@@ -202,18 +202,26 @@ const ResultDisplay = ({ result }) => {
                                     {t('tools.checkers.external_intel')}
                                 </h3>
                                 <div className="space-y-4">
-                                    {Object.entries(result.third_party_eval).map(([source, data]) => (
+                                    {Object.entries(result.third_party_eval).map(([source, data]) => {
+                                        const st = data.status.toLowerCase();
+                                        const isSafe        = st.includes('safe');
+                                        const isUnverified  = st.includes('unverified') || st.includes('processing');
+                                        const isSuspicious  = st.includes('suspicious');
+                                        const dotColor  = isSafe ? 'bg-green-500' : isUnverified ? 'bg-blue-400' : isSuspicious ? 'bg-yellow-400' : 'bg-red-500';
+                                        const textColor = isSafe ? 'text-green-500' : isUnverified ? 'text-blue-400' : isSuspicious ? 'text-yellow-400' : 'text-red-500';
+                                        return (
                                         <div key={source} className="flex items-center justify-between p-4 rounded-2xl"
                                             style={{ background: theme.badgeBg, border: `1px solid ${theme.border}` }}>
                                             <div className="flex items-center gap-3">
-                                                <div className={`w-2 h-2 rounded-full ${data.status.toLowerCase().includes('safe') ? 'bg-green-500' : 'bg-red-500'}`} />
+                                                <div className={`w-2 h-2 rounded-full ${dotColor}`} />
                                                 <span className="text-xs font-black capitalize" style={{ color: theme.text }}>{source}</span>
                                             </div>
-                                            <span className={`text-[10px] font-black uppercase tracking-widest ${data.status.toLowerCase().includes('safe') ? 'text-green-500' : 'text-red-500'}`}>
+                                            <span className={`text-[10px] font-black uppercase tracking-widest ${textColor}`}>
                                                 {data.status}
                                             </span>
                                         </div>
-                                    ))}
+                                        );
+                                    })}
                                 </div>
                             </div>
                         )}
