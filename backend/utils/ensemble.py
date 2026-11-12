@@ -90,11 +90,11 @@ def fuse_multimodal_predictions(
     # Live Cyber Threat Intelligence Overrides (PhishTank, urlscan, VirusTotal, AlienVault, SafeBrowsing)
     if third_party_eval:
         threat_sources = []
-        vt = third_party_eval.get("virusTotal", {})
-        us = third_party_eval.get("urlScan", {})
-        pt = third_party_eval.get("phishTank", {})
+        vt  = third_party_eval.get("virusTotal", {})
+        us  = third_party_eval.get("urlScan", {})
+        pt  = third_party_eval.get("phishTank", {})
         otx = third_party_eval.get("alienVaultOTX", {})
-        gs = third_party_eval.get("googleSafeBrowsing", {})
+        gs  = third_party_eval.get("googleSafeBrowsing", {})
 
         if vt.get("status") == "Dangerous":
             threat_sources.append(f"VirusTotal ({vt.get('details', '')})")
@@ -111,9 +111,24 @@ def fuse_multimodal_predictions(
             final_proba = max(final_proba, 0.98)
             override_reason = f"Live Threat Intelligence Confirmed: {'; '.join(threat_sources)}"
         elif pt.get("status") == "Suspicious":
-            final_proba = max(final_proba, 0.75)
-            if not override_reason:
-                override_reason = "Reported Suspicious on PhishTank Feed"
+            # PhishTank Suspicious = "in database, unverified by community votes".
+            # Only amplify risk when at least one other CTI source corroborates the threat.
+            # If all other sources are Safe/Unverified, PhishTank alone is not authoritative
+            # enough to override a low ML score (avoids false positives on well-known domains
+            # that appear in PhishTank's unverified pending queue, e.g. youtube.com).
+            other_dangerous = any(
+                src.get("status") in ("Dangerous", "Suspicious")
+                for src in [vt, us, otx, gs]
+            )
+            if other_dangerous:
+                final_proba = max(final_proba, 0.75)
+                if not override_reason:
+                    override_reason = "Reported Suspicious on PhishTank Feed (corroborated by other CTI sources)"
+            else:
+                # Mild bump only — not enough to cross the 0.5 phishing threshold alone
+                final_proba = max(final_proba, min(final_proba + 0.10, 0.45))
+                if not override_reason:
+                    override_reason = "Reported Suspicious on PhishTank Feed (unverified, no corroboration)"
 
     final_proba = round(min(max(final_proba, 0.0), 1.0), 4)
     prediction = "phishing" if final_proba >= 0.50 else "legitimate"
